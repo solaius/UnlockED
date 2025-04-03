@@ -33,14 +33,14 @@ app.get('/', (req, res) => {
   res.send('UnlockED API is running');
 });
 
-// Connect to MongoDB
+// Connect to MongoDB (commented out for development without MongoDB)
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/unlocked');
-    console.log('MongoDB connected');
+    // await mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/unlocked');
+    console.log('MongoDB connection skipped for development');
   } catch (error) {
     console.error('MongoDB connection error:', error.message);
-    process.exit(1);
+    // process.exit(1);
   }
 };
 

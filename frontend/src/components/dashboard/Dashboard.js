@@ -9,21 +9,73 @@ const Dashboard = () => {
   const [error, setError] = useState(null);
   const { currentUser } = useContext(AuthContext);
 
+  // Demo user for demonstration purposes
+  const demoUser = currentUser || {
+    id: 'demo-user',
+    username: 'Demo User',
+    email: 'demo@example.com',
+    role: 'student',
+    progress: {
+      currentLevel: 2,
+      points: 75,
+      completedLessons: []
+    },
+    badges: [
+      {
+        name: 'Ion Initiate',
+        description: 'Completed your first ionic compound naming exercise',
+        dateEarned: new Date()
+      }
+    ]
+  };
+
   useEffect(() => {
     const fetchModules = async () => {
       try {
-        const token = localStorage.getItem('token');
-        const config = {
-          headers: {
-            'Authorization': `Bearer ${token}`
+        // For demo purposes, use sample modules instead of API call
+        const demoModules = [
+          {
+            _id: 'module1',
+            title: 'Introduction to Chemical Nomenclature',
+            description: 'Learn the basics of naming chemical compounds and understanding chemical formulas.',
+            level: 1,
+            content: 'Chemical nomenclature is the system of naming chemical compounds...',
+            objectives: [
+              'Identify the difference between ionic and molecular compounds',
+              'Name binary ionic compounds correctly',
+              'Understand how to indicate charges for transition metals',
+              'Recognize common chemical formulas and their names'
+            ]
+          },
+          {
+            _id: 'module2',
+            title: 'Naming Binary Molecular Compounds',
+            description: 'Learn how to name compounds formed between two non-metals.',
+            level: 2,
+            content: 'Binary molecular compounds are formed between two non-metals...',
+            objectives: [
+              'Understand the difference between ionic and molecular compounds',
+              'Learn the prefixes used to indicate the number of atoms',
+              'Name binary molecular compounds correctly',
+              'Write chemical formulas from the names of molecular compounds'
+            ]
+          },
+          {
+            _id: 'module3',
+            title: 'Naming Acids and Bases',
+            description: 'Learn the rules for naming acids and bases in chemistry.',
+            level: 3,
+            content: 'Acids are compounds that release hydrogen ions in water...',
+            objectives: [
+              'Understand the difference between binary and oxyacids',
+              'Name common acids and bases correctly',
+              'Recognize acid and base formulas',
+              'Understand the relationship between acid names and their anions'
+            ]
           }
-        };
+        ];
         
-        const res = await axios.get('http://localhost:5000/api/modules', config);
-        
-        if (res.data.success) {
-          setModules(res.data.data);
-        }
+        setModules(demoModules);
       } catch (err) {
         console.error('Error fetching modules:', err);
         setError('Failed to load modules. Please try again later.');
@@ -42,7 +94,7 @@ const Dashboard = () => {
   return (
     <div className="dashboard-container">
       <div className="dashboard-header">
-        <h1>Welcome to UnlockED, {currentUser.username}!</h1>
+        <h1>Welcome to UnlockED, {demoUser.username}!</h1>
         <p className="dashboard-subtitle">
           Your personalized chemistry learning platform
         </p>
@@ -50,11 +102,11 @@ const Dashboard = () => {
         <div className="user-stats">
           <div className="stat-item">
             <span className="stat-label">Current Level:</span>
-            <span className="stat-value">{currentUser.progress?.currentLevel || 1}</span>
+            <span className="stat-value">{demoUser.progress?.currentLevel || 1}</span>
           </div>
           <div className="stat-item">
             <span className="stat-label">Points Earned:</span>
-            <span className="stat-value">{currentUser.progress?.points || 0}</span>
+            <span className="stat-value">{demoUser.progress?.points || 0}</span>
           </div>
         </div>
       </div>
@@ -72,7 +124,7 @@ const Dashboard = () => {
               <div 
                 key={module._id} 
                 className={`module-card ${
-                  module.level > currentUser.progress?.currentLevel 
+                  module.level > demoUser.progress?.currentLevel 
                     ? 'module-locked' 
                     : ''
                 }`}
@@ -81,7 +133,7 @@ const Dashboard = () => {
                 <p className="module-description">{module.description}</p>
                 <div className="module-meta">
                   <span className="module-level">Level {module.level}</span>
-                  {module.level > currentUser.progress?.currentLevel ? (
+                  {module.level > demoUser.progress?.currentLevel ? (
                     <span className="module-status">Locked</span>
                   ) : (
                     <Link 
@@ -101,9 +153,9 @@ const Dashboard = () => {
       <div className="badges-container">
         <h2>Your Achievements</h2>
         
-        {currentUser.badges && currentUser.badges.length > 0 ? (
+        {demoUser.badges && demoUser.badges.length > 0 ? (
           <div className="badges-grid">
-            {currentUser.badges.map((badge, index) => (
+            {demoUser.badges.map((badge, index) => (
               <div key={index} className="badge-card">
                 <h3 className="badge-title">{badge.name}</h3>
                 <p className="badge-description">{badge.description}</p>

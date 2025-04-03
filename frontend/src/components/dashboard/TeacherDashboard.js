@@ -15,32 +15,91 @@ const TeacherDashboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const token = localStorage.getItem('token');
-        const config = {
-          headers: {
-            'Authorization': `Bearer ${token}`
+        // Demo modules data
+        const demoModules = [
+          {
+            _id: 'module1',
+            title: 'Introduction to Chemical Nomenclature',
+            description: 'Learn the basics of naming chemical compounds and understanding chemical formulas.',
+            level: 1
+          },
+          {
+            _id: 'module2',
+            title: 'Naming Binary Molecular Compounds',
+            description: 'Learn how to name compounds formed between two non-metals.',
+            level: 2
+          },
+          {
+            _id: 'module3',
+            title: 'Naming Acids and Bases',
+            description: 'Learn the rules for naming acids and bases in chemistry.',
+            level: 3
           }
-        };
+        ];
         
-        // Fetch students with progress
-        const studentsRes = await axios.get(
-          'http://localhost:5000/api/progress/students',
-          config
-        );
+        // Demo students data
+        const demoStudents = [
+          {
+            id: 'student1',
+            username: 'JohnDoe',
+            email: 'john.doe@example.com',
+            level: 2,
+            points: 85,
+            progress: [
+              {
+                module: { _id: 'module1', title: 'Introduction to Chemical Nomenclature', level: 1 },
+                completed: true,
+                score: 45,
+                lastAccessed: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000) // 2 days ago
+              },
+              {
+                module: { _id: 'module2', title: 'Naming Binary Molecular Compounds', level: 2 },
+                completed: false,
+                score: 40,
+                lastAccessed: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000) // 1 day ago
+              }
+            ]
+          },
+          {
+            id: 'student2',
+            username: 'JaneSmith',
+            email: 'jane.smith@example.com',
+            level: 3,
+            points: 120,
+            progress: [
+              {
+                module: { _id: 'module1', title: 'Introduction to Chemical Nomenclature', level: 1 },
+                completed: true,
+                score: 50,
+                lastAccessed: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000) // 5 days ago
+              },
+              {
+                module: { _id: 'module2', title: 'Naming Binary Molecular Compounds', level: 2 },
+                completed: true,
+                score: 70,
+                lastAccessed: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000) // 3 days ago
+              }
+            ]
+          },
+          {
+            id: 'student3',
+            username: 'MikeJohnson',
+            email: 'mike.johnson@example.com',
+            level: 1,
+            points: 30,
+            progress: [
+              {
+                module: { _id: 'module1', title: 'Introduction to Chemical Nomenclature', level: 1 },
+                completed: false,
+                score: 30,
+                lastAccessed: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000) // 1 day ago
+              }
+            ]
+          }
+        ];
         
-        if (studentsRes.data.success) {
-          setStudents(studentsRes.data.data);
-        }
-        
-        // Fetch modules
-        const modulesRes = await axios.get(
-          'http://localhost:5000/api/modules',
-          config
-        );
-        
-        if (modulesRes.data.success) {
-          setModules(modulesRes.data.data);
-        }
+        setModules(demoModules);
+        setStudents(demoStudents);
       } catch (err) {
         console.error('Error fetching dashboard data:', err);
         setError('Failed to load dashboard data. Please try again later.');
