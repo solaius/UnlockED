@@ -1,0 +1,101 @@
+[
+  {
+    "id": "q1",
+    "text": "What is the name of the compound NaCl?",
+    "type": "fill-in-blank",
+    "difficulty": 1,
+    "correctAnswer": "sodium chloride",
+    "explanation": "NaCl is composed of sodium (Na) and chlorine (Cl). When naming binary ionic compounds, we name the metal first (sodium) followed by the non-metal with an -ide ending (chloride).",
+    "hints": [
+      "This is a binary ionic compound.",
+      "The first element is sodium (Na).",
+      "The second element is chlorine (Cl), which becomes chloride in the compound name."
+    ]
+  },
+  {
+    "id": "q2",
+    "text": "What is the name of Fe2O3?",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "options": [
+      {
+        "text": "iron oxide",
+        "isCorrect": false
+      },
+      {
+        "text": "iron(III) oxide",
+        "isCorrect": true
+      },
+      {
+        "text": "iron(II) oxide",
+        "isCorrect": false
+      },
+      {
+        "text": "diiron trioxide",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Fe2O3 contains iron in the +3 oxidation state. When naming compounds with transition metals, we need to specify the oxidation state using Roman numerals. The correct name is iron(III) oxide.",
+    "hints": [
+      "This compound contains a transition metal (Fe) and oxygen.",
+      "You need to determine the oxidation state of iron.",
+      "The formula shows 2 iron atoms and 3 oxygen atoms."
+    ]
+  },
+  {
+    "id": "q3",
+    "text": "What is the chemical formula for calcium phosphate?",
+    "type": "fill-in-blank",
+    "difficulty": 3,
+    "correctAnswer": "Ca3(PO4)2",
+    "explanation": "Calcium phosphate contains calcium ions (Ca²⁺) and phosphate ions (PO₄³⁻). To balance the charges, we need 3 calcium ions (+6) and 2 phosphate ions (-6), giving us Ca3(PO4)2.",
+    "hints": [
+      "Calcium has a +2 charge (Ca²⁺).",
+      "Phosphate is a polyatomic ion with a -3 charge (PO₄³⁻).",
+      "The charges need to balance in the final formula."
+    ]
+  },
+  {
+    "id": "q4",
+    "text": "What is the name of H2SO4?",
+    "type": "fill-in-blank",
+    "difficulty": 2,
+    "correctAnswer": "sulfuric acid",
+    "explanation": "H2SO4 is an oxoacid containing hydrogen, sulfur, and oxygen. The naming follows the pattern: [root of central atom] + -ic + acid. Since sulfur is in its highest common oxidation state (+6), we use the -ic ending, giving us sulfuric acid.",
+    "hints": [
+      "This is an oxoacid containing hydrogen, sulfur, and oxygen.",
+      "The central atom is sulfur.",
+      "When the central atom is in its highest common oxidation state, we use the -ic ending."
+    ]
+  },
+  {
+    "id": "q5",
+    "text": "What is the name of the compound CuSO4·5H2O?",
+    "type": "multiple-choice",
+    "difficulty": 3,
+    "options": [
+      {
+        "text": "copper sulfate",
+        "isCorrect": false
+      },
+      {
+        "text": "copper(II) sulfate",
+        "isCorrect": false
+      },
+      {
+        "text": "copper(II) sulfate pentahydrate",
+        "isCorrect": true
+      },
+      {
+        "text": "copper sulfate pentahydrate",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CuSO4·5H2O is a hydrated compound containing copper(II) ions, sulfate ions, and 5 water molecules. The correct name is copper(II) sulfate pentahydrate, where 'penta-' indicates 5 water molecules.",
+    "hints": [
+      "This is a hydrated compound containing copper, sulfate, and water molecules.",
+      "Copper can have multiple oxidation states, so you need to specify which one.",
+      "The '·5H2O' indicates 5 water molecules, which is reflected in the name."
+    ]
+  }
+]

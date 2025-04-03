@@ -1,0 +1,106 @@
+[
+  {
+    "text": "What is the name of the compound NaCl?",
+    "type": "fill-in-blank",
+    "difficulty": 1,
+    "correctAnswer": "sodium chloride",
+    "explanation": "NaCl is composed of sodium (Na) and chlorine (Cl). When naming binary ionic compounds, we name the metal first (sodium) followed by the non-metal with an -ide ending (chloride).",
+    "hints": [
+      "This is a binary ionic compound.",
+      "The first element is sodium (Na).",
+      "The second element is chlorine (Cl), which becomes chloride in the compound name."
+    ],
+    "points": 10,
+    "module": "module1"
+  },
+  {
+    "text": "What is the name of Fe2O3?",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "options": [
+      {
+        "text": "iron oxide",
+        "isCorrect": false
+      },
+      {
+        "text": "iron(III) oxide",
+        "isCorrect": true
+      },
+      {
+        "text": "iron(II) oxide",
+        "isCorrect": false
+      },
+      {
+        "text": "diiron trioxide",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Fe2O3 contains iron in the +3 oxidation state. When naming compounds with transition metals, we need to specify the oxidation state using Roman numerals. The correct name is iron(III) oxide.",
+    "hints": [
+      "This compound contains a transition metal (Fe) and oxygen.",
+      "You need to determine the oxidation state of iron.",
+      "The formula shows 2 iron atoms and 3 oxygen atoms."
+    ],
+    "points": 15,
+    "module": "module1"
+  },
+  {
+    "text": "What is the chemical formula for calcium chloride?",
+    "type": "fill-in-blank",
+    "difficulty": 2,
+    "correctAnswer": "CaCl2",
+    "explanation": "Calcium chloride contains calcium (Ca) with a +2 charge and chloride (Cl) with a -1 charge. To balance the charges, we need two chloride ions for each calcium ion, giving us CaCl2.",
+    "hints": [
+      "Calcium has a charge of +2.",
+      "Chloride has a charge of -1.",
+      "The charges must balance in the final formula."
+    ],
+    "points": 15,
+    "module": "module1"
+  },
+  {
+    "text": "What is the name of CuSO4?",
+    "type": "multiple-choice",
+    "difficulty": 3,
+    "options": [
+      {
+        "text": "copper sulfate",
+        "isCorrect": false
+      },
+      {
+        "text": "copper(II) sulfate",
+        "isCorrect": true
+      },
+      {
+        "text": "copper(I) sulfate",
+        "isCorrect": false
+      },
+      {
+        "text": "cupric sulfate",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CuSO4 contains copper in the +2 oxidation state. When naming compounds with transition metals, we need to specify the oxidation state using Roman numerals. The correct name is copper(II) sulfate.",
+    "hints": [
+      "This compound contains a transition metal (Cu) and a polyatomic ion (sulfate, SO4).",
+      "You need to determine the oxidation state of copper.",
+      "Sulfate has a charge of -2."
+    ],
+    "points": 20,
+    "module": "module1"
+  },
+  {
+    "text": "What is the chemical formula for aluminum oxide?",
+    "type": "fill-in-blank",
+    "difficulty": 2,
+    "correctAnswer": "Al2O3",
+    "explanation": "Aluminum oxide contains aluminum (Al) with a +3 charge and oxide (O) with a -2 charge. To balance the charges, we need 2 aluminum ions (+6) and 3 oxide ions (-6), giving us Al2O3.",
+    "hints": [
+      "Aluminum has a charge of +3.",
+      "Oxide has a charge of -2.",
+      "The charges must balance in the final formula."
+    ],
+    "points": 15,
+    "module": "module1"
+  }
+]

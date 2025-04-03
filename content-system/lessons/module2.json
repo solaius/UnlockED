@@ -1,0 +1,15 @@
+{
+  "title": "Naming Binary Molecular Compounds",
+  "description": "Learn how to name compounds formed between two non-metals.",
+  "level": 2,
+  "content": "Binary molecular compounds are formed between two non-metals. Unlike ionic compounds, these compounds use prefixes to indicate the number of atoms of each element in the formula.\n\nThe prefixes used are:\n- mono- (1) - often omitted for the first element\n- di- (2)\n- tri- (3)\n- tetra- (4)\n- penta- (5)\n- hexa- (6)\n- hepta- (7)\n- octa- (8)\n- nona- (9)\n- deca- (10)\n\nTo name a binary molecular compound:\n1. Name the first element using its element name\n2. Name the second element, changing its ending to '-ide'\n3. Add prefixes to both elements to indicate the number of atoms\n\nExamples:\n- CO: carbon monoxide (mono- is omitted for the first element)\n- CO2: carbon dioxide\n- N2O4: dinitrogen tetroxide\n- SF6: sulfur hexafluoride\n\nNote: When the prefix ends with 'a' or 'o' and the element name begins with 'o', one of the vowels is often dropped (e.g., 'mono-oxide' becomes 'monoxide').",
+  "objectives": [
+    "Understand the difference between ionic and molecular compounds",
+    "Learn the prefixes used to indicate the number of atoms",
+    "Name binary molecular compounds correctly",
+    "Write chemical formulas from the names of molecular compounds"
+  ],
+  "prerequisites": [
+    "module1"
+  ]
+}

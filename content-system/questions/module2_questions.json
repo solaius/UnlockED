@@ -1,0 +1,106 @@
+[
+  {
+    "text": "What is the name of the compound CO2?",
+    "type": "fill-in-blank",
+    "difficulty": 1,
+    "correctAnswer": "carbon dioxide",
+    "explanation": "CO2 is a binary molecular compound with one carbon atom and two oxygen atoms. We use the prefix 'di-' to indicate two oxygen atoms, giving us carbon dioxide.",
+    "hints": [
+      "This is a binary molecular compound (two non-metals).",
+      "The first element is carbon (C).",
+      "The second element is oxygen (O), and there are two oxygen atoms."
+    ],
+    "points": 10,
+    "module": "module2"
+  },
+  {
+    "text": "What is the name of N2O5?",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "options": [
+      {
+        "text": "nitrogen oxide",
+        "isCorrect": false
+      },
+      {
+        "text": "dinitrogen pentoxide",
+        "isCorrect": true
+      },
+      {
+        "text": "nitrogen pentoxide",
+        "isCorrect": false
+      },
+      {
+        "text": "dinitrogen oxide",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "N2O5 contains two nitrogen atoms and five oxygen atoms. We use the prefixes 'di-' for two nitrogen atoms and 'penta-' for five oxygen atoms, giving us dinitrogen pentoxide.",
+    "hints": [
+      "This is a binary molecular compound (two non-metals).",
+      "You need to use prefixes to indicate the number of atoms.",
+      "There are 2 nitrogen atoms and 5 oxygen atoms."
+    ],
+    "points": 15,
+    "module": "module2"
+  },
+  {
+    "text": "What is the chemical formula for sulfur hexafluoride?",
+    "type": "fill-in-blank",
+    "difficulty": 2,
+    "correctAnswer": "SF6",
+    "explanation": "Sulfur hexafluoride contains one sulfur atom and six fluorine atoms. The prefix 'hexa-' indicates six fluorine atoms, giving us SF6.",
+    "hints": [
+      "This is a binary molecular compound.",
+      "The first element is sulfur (S).",
+      "The prefix 'hexa-' indicates six atoms of the second element (fluorine)."
+    ],
+    "points": 15,
+    "module": "module2"
+  },
+  {
+    "text": "What is the name of P4O10?",
+    "type": "multiple-choice",
+    "difficulty": 3,
+    "options": [
+      {
+        "text": "phosphorus oxide",
+        "isCorrect": false
+      },
+      {
+        "text": "tetraphosphorus decaoxide",
+        "isCorrect": true
+      },
+      {
+        "text": "phosphorus decaoxide",
+        "isCorrect": false
+      },
+      {
+        "text": "tetraphosphorus oxide",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "P4O10 contains four phosphorus atoms and ten oxygen atoms. We use the prefixes 'tetra-' for four phosphorus atoms and 'deca-' for ten oxygen atoms, giving us tetraphosphorus decaoxide.",
+    "hints": [
+      "This is a binary molecular compound (two non-metals).",
+      "You need to use prefixes to indicate the number of atoms.",
+      "There are 4 phosphorus atoms and 10 oxygen atoms."
+    ],
+    "points": 20,
+    "module": "module2"
+  },
+  {
+    "text": "What is the chemical formula for dinitrogen monoxide?",
+    "type": "fill-in-blank",
+    "difficulty": 2,
+    "correctAnswer": "N2O",
+    "explanation": "Dinitrogen monoxide contains two nitrogen atoms and one oxygen atom. The prefixes 'di-' and 'mono-' indicate two nitrogen atoms and one oxygen atom, respectively, giving us N2O.",
+    "hints": [
+      "This is a binary molecular compound.",
+      "The prefix 'di-' indicates two atoms of the first element (nitrogen).",
+      "The prefix 'mono-' indicates one atom of the second element (oxygen)."
+    ],
+    "points": 15,
+    "module": "module2"
+  }
+]

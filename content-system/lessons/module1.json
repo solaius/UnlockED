@@ -1,0 +1,13 @@
+{
+  "title": "Introduction to Chemical Nomenclature",
+  "description": "Learn the basics of naming chemical compounds and understanding chemical formulas.",
+  "level": 1,
+  "content": "Chemical nomenclature is the system of naming chemical compounds. The rules for naming compounds are based on the type of compound and its chemical structure.\n\nIn this module, we'll focus on naming simple binary compounds - those composed of just two elements. These include:\n\n1. Binary ionic compounds (metal + non-metal)\n2. Binary molecular compounds (non-metal + non-metal)\n\nFor binary ionic compounds, we name the metal first (keeping its name unchanged), followed by the non-metal with its ending changed to '-ide'.\n\nExamples:\n- NaCl: sodium chloride\n- MgO: magnesium oxide\n- CaF2: calcium fluoride\n\nFor transition metals that can form multiple ions with different charges, we specify the charge using Roman numerals in parentheses.\n\nExamples:\n- FeCl2: iron(II) chloride\n- FeCl3: iron(III) chloride",
+  "objectives": [
+    "Identify the difference between ionic and molecular compounds",
+    "Name binary ionic compounds correctly",
+    "Understand how to indicate charges for transition metals",
+    "Recognize common chemical formulas and their names"
+  ],
+  "prerequisites": []
+}
